@@ -17,7 +17,6 @@ public class PersonStringKey implements BPKey<PersonStringKey> {
 	}
 	
 	public int getSize() {
-		
 		return 20;
 	}
 	
