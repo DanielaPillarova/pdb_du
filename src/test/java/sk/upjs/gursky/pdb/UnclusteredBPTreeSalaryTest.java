@@ -32,10 +32,11 @@ public class UnclusteredBPTreeSalaryTest {
 
 		System.out.println("Interval unclusteres: " + time / 1_000_000.0 + " ms");
 
-		for (int i = 0; i < 20; i++) {
-			System.out.println("Name: " + result.get(i).name + ", surname: " + result.get(i).surname + ", age: "
-					+ result.get(i).age + ", salary: " + result.get(i).salary);
-		}
+//		for (int i = 0; i < 500; i++) {
+//			System.out.println("Name: " + result.get(i).name + ", surname: " + result.get(i).surname + ", age: "
+//					+ result.get(i).age + ", salary: " + result.get(i).salary);
+//		}
+
 		for (PersonEntry personEntry : result) {
 			assertTrue(personEntry.salary >= 400 && personEntry.salary <= 800);
 		}

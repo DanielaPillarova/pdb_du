@@ -83,13 +83,8 @@ public class UnclusteredBPTreeSalary extends BPTree<SalaryKey, SalaryOffsetEntry
 			
 			PersonEntry entry = new PersonEntry();
 			entry.load(buffer);
-			
-//			if (!((500 <= entry.salary) && (entry.salary <= 1000))) {
-//				System.out.println("-------- ERROOOOORR");
-//				System.out.println(entry);
-//				return result;
-//			}
-			
+
+			System.out.println("ENTRY: " + entry);
 			result.add(entry);
 		}
 		channel.close();
